@@ -20,7 +20,7 @@
             }
         }
     }
-    
+
     let FlashLight = function () {
         this.setBattery = function (battery) {
             this.battery = battery;
@@ -29,9 +29,9 @@
             return this.battery.getEnergy();
         }
         this.light = function () {
-            if(this.status){
+            if (this.status) {
                 alert("Light On");
-            }else{
+            } else {
                 alert("Light Off");
             }
         }
@@ -46,7 +46,7 @@
     battery.setEnergy(10);
 
     let flashLight = new FlashLight();
-    flashLight .setBattery(battery);
+    flashLight.setBattery(battery);
 
     document.write("Battery info:" + flashLight.getBatteryInfo() + "<br/>");
     flashLight.light();
